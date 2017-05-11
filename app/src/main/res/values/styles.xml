@@ -6,9 +6,28 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#b7a57a</item>
+        <item name="colorPrimaryDark">#4b2e83</item>
+        <item name="colorAccent">@android:color/black</item>
     </style>
 
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?android:colorPrimaryDark</item>
+    </style>
+
+    <style name="Label" parent="@style/TextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Gold" parent="@style/Label">
+        <item name="android:background">?android:colorPrimary</item>
+        <item name="android:textColor">?android:colorAccent</item>
+    </style>
+
+    <style name="Button" parent="@android:style/MediaButton">
+        <item name="android:textSize">22sp</item>
+    </style>
 </resources>
